@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devwarth's Uttarakhand Adventure 2026</title>
+<title>Uttarakhand Road Trip 2026</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,151 +13,155 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
+font-family:Poppins,sans-serif;
 }
 
 body{
-font-family:Poppins,sans-serif;
-background:#eef8ff;
-color:#222;
-}
-
-header{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
+overflow:hidden;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
-padding:20px;
-}
-
-header h1{
-font-size:60px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
 color:white;
-font-family:Cinzel;
-text-shadow:3px 3px 12px black;
 }
 
-header h2{
-margin-top:20px;
+.container{
+
+width:95%;
+max-width:1200px;
+height:90vh;
+
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(8px);
+
+border-radius:20px;
+
+padding:35px;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+h1{
+
+text-align:center;
+font-size:45px;
+font-family:Cinzel;
 color:#FFD700;
-font-size:30px;
+
 }
 
-header p{
-margin-top:20px;
-font-size:20px;
-color:#f5f5f5;
-}
+.subtitle{
 
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:15px 35px;
-background:#ff9800;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-transition:.4s;
-}
-
-.btn:hover{
-background:#e65100;
-transform:scale(1.08);
-}
-
-section{
-padding:70px 10%;
-}
-
-.title{
 text-align:center;
-font-size:40px;
-font-family:Cinzel;
-color:#0d47a1;
-margin-bottom:40px;
+font-size:20px;
+margin-top:8px;
+
 }
 
 .route{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:30px 0;
+flex-wrap:wrap;
+
 }
 
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.1);
+.place{
+
+flex:1;
+min-width:150px;
+
+text-align:center;
+
+padding:15px;
+
+background:rgba(255,255,255,.12);
+
+margin:8px;
+
+border-radius:12px;
+
 transition:.4s;
+
 }
 
-.card:hover{
-transform:translateY(-8px);
+.place:hover{
+
+background:#ff9800;
+transform:translateY(-6px);
+
 }
 
-.card h3{
-color:#1565c0;
-margin-bottom:15px;
+.arrow{
+
+font-size:30px;
+color:#FFD700;
+
 }
 
-.timeline{
-border-left:5px solid #1565c0;
-padding-left:30px;
+.days{
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+
 }
 
 .day{
-margin-bottom:35px;
-background:white;
-padding:20px;
+
+background:rgba(255,255,255,.12);
+
+padding:18px;
+
 border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+text-align:center;
+
 }
 
 .day h3{
-color:#e65100;
+
+color:#FFD700;
 margin-bottom:10px;
+
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
+.footer{
 
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
-transition:.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-footer{
-background:#0d47a1;
-color:white;
-padding:40px;
 text-align:center;
+
+font-size:18px;
+
+padding-top:10px;
+
+border-top:1px solid rgba(255,255,255,.2);
+
 }
 
-@media(max-width:768px){
+@media(max-width:1000px){
 
-header h1{
-font-size:38px;
+body{
+overflow:auto;
 }
 
-header h2{
-font-size:22px;
+.container{
+height:auto;
+margin:20px;
+}
+
+.days{
+grid-template-columns:repeat(2,1fr);
 }
 
 }
@@ -169,167 +172,91 @@ font-size:22px;
 
 <body>
 
-<header>
+<div class="container">
 
 <div>
 
 <h1>🏔 Uttarakhand Road Trip 2026</h1>
 
-<h2>20 August – 24 August</h2>
-
-<p>
-A journey through the Himalayas, sacred temples, breathtaking valleys,
-and unforgettable memories.
+<p class="subtitle">
+20 August – 24 August
 </p>
 
-<a href="#plan" class="btn">Explore Trip</a>
-
 </div>
-
-</header>
-
-<section id="plan">
-
-<h2 class="title">📍 Travel Route</h2>
 
 <div class="route">
 
-<div class="card">
-<h3>🚗 Meerut</h3>
-<p>Starting point of our unforgettable Himalayan road trip.</p>
+<div class="place">
+<h2>🏠 Meerut</h2>
+<p>Starting Point</p>
 </div>
 
-<div class="card">
-<h3>🕉 Rishikesh</h3>
-<p>The Yoga Capital of the World and gateway to the Himalayas.</p>
+<div class="arrow">➜</div>
+
+<div class="place">
+<h2>🕉 Rishikesh</h2>
+<p>Gateway to Himalayas</p>
 </div>
 
-<div class="card">
-<h3>🏔 Madhyamaheshwar</h3>
-<p>One of the sacred Panch Kedar temples dedicated to Lord Shiva.</p>
+<div class="arrow">➜</div>
+
+<div class="place">
+<h2>🙏 Madhyamaheshwar</h2>
+<p>Panch Kedar Temple</p>
 </div>
 
-<div class="card">
-<h3>🙏 Kalpeshwar</h3>
-<p>The only Panch Kedar temple open throughout the year.</p>
+<div class="arrow">➜</div>
+
+<div class="place">
+<h2>🔱 Kalpeshwar</h2>
+<p>Lord Shiva Temple</p>
 </div>
 
-<div class="card">
-<h3>❄ Auli</h3>
-<p>India's famous hill station known for snow, ropeways, and Himalayan views.</p>
+<div class="arrow">➜</div>
+
+<div class="place">
+<h2>❄ Auli</h2>
+<p>Snow Paradise</p>
 </div>
 
 </div>
 
-</section>
-
-<section>
-
-<h2 class="title">🗓 Day-wise Itinerary</h2>
-
-<div class="timeline">
+<div class="days">
 
 <div class="day">
-<h3>📅 20 August</h3>
-<p>
-Departure from Meerut early morning and arrival at Rishikesh.
-Explore Triveni Ghat, Laxman Jhula, Ram Jhula, and enjoy the evening Ganga Aarti.
-</p>
-</div>
-
-<div class="day">
-<h3>📅 21 August</h3>
-<p>
-Journey towards Madhyamaheshwar.
-Experience scenic mountain roads, rivers, forests, and begin the trek.
-</p>
+<h3>20 Aug</h3>
+<p>Meerut ➜ Rishikesh<br>Evening Ganga Aarti</p>
 </div>
 
 <div class="day">
-<h3>📅 22 August</h3>
-<p>
-Darshan at Madhyamaheshwar Temple.
-Continue the journey towards Kalpeshwar and explore the beautiful Urgam Valley.
-</p>
+<h3>21 Aug</h3>
+<p>Travel & Trek towards Madhyamaheshwar</p>
 </div>
 
 <div class="day">
-<h3>📅 23 August</h3>
-<p>
-Visit Kalpeshwar Temple and then drive towards Auli.
-Enjoy ropeway rides and panoramic Himalayan landscapes.
-</p>
+<h3>22 Aug</h3>
+<p>Temple Darshan & Journey to Kalpeshwar</p>
 </div>
 
 <div class="day">
-<h3>📅 24 August</h3>
-<p>
-Morning sightseeing in Auli followed by the return journey with unforgettable memories.
-</p>
+<h3>23 Aug</h3>
+<p>Kalpeshwar Darshan ➜ Auli</p>
+</div>
+
+<div class="day">
+<h3>24 Aug</h3>
+<p>Explore Auli & Return Journey</p>
 </div>
 
 </div>
 
-</section>
+<div class="footer">
 
-<section>
-
-<h2 class="title">🌄 Places to Explore</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=80">
-
-<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80">
-
-<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80">
-
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=700&q=80">
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">🎒 Travel Checklist</h2>
-
-<div class="route">
-
-<div class="card">
-✔ Trekking Shoes<br>
-✔ Warm Jacket<br>
-✔ Raincoat<br>
-✔ Power Bank
-</div>
-
-<div class="card">
-✔ ID Proof<br>
-✔ Water Bottle<br>
-✔ Medicines<br>
-✔ Torch
-</div>
-
-<div class="card">
-✔ Camera<br>
-✔ Sunglasses<br>
-✔ Gloves<br>
-✔ Snacks
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>🏔 Adventure Awaits</h2>
+<h2 style="color:#FFD700;">🚗 Route</h2>
 
 <p>
 
-<strong>Route:</strong><br>
-
-Meerut → Rishikesh → Madhyamaheshwar → Kalpeshwar → Auli
+Meerut ➜ Rishikesh ➜ Madhyamaheshwar ➜ Kalpeshwar ➜ Auli
 
 </p>
 
@@ -337,19 +264,13 @@ Meerut → Rishikesh → Madhyamaheshwar → Kalpeshwar → Auli
 
 <p>
 
-📅 20 August – 24 August 2026
+✨ One Journey • Five Destinations • Endless Memories ✨
 
 </p>
 
-<br>
+</div>
 
-<p>
-
-Made with ❤️ for an unforgettable Himalayan Journey.
-
-</p>
-
-</footer>
+</div>
 
 </body>
 </html>
