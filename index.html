@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uttarakhand Road Trip 2026</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<title>The Legend of Lord Shri Ram</title>
 
 <style>
 
@@ -13,156 +12,103 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+header{
+
 height:100vh;
-overflow:hidden;
+
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-color:white;
-}
-
-.container{
-
-width:95%;
-max-width:1200px;
-height:90vh;
-
-background:rgba(0,0,0,.55);
-backdrop-filter:blur(8px);
-
-border-radius:20px;
-
-padding:35px;
-
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-
-box-shadow:0 15px 40px rgba(0,0,0,.5);
-
-}
-
-h1{
-
 text-align:center;
-font-size:45px;
-font-family:Cinzel;
+
+}
+
+header h1{
+
+font-size:70px;
 color:#FFD700;
 
 }
 
-.subtitle{
+header p{
 
-text-align:center;
-font-size:20px;
-margin-top:8px;
-
-}
-
-.route{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin:30px 0;
-flex-wrap:wrap;
+font-size:22px;
+margin-top:20px;
 
 }
 
-.place{
+.container{
 
-flex:1;
-min-width:150px;
+width:90%;
+margin:auto;
+padding:60px 0;
 
-text-align:center;
+}
 
-padding:15px;
+.timeline{
 
-background:rgba(255,255,255,.12);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
 
-margin:8px;
+}
 
-border-radius:12px;
+.card{
+
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
 
 transition:.4s;
 
 }
 
-.place:hover{
+.card:hover{
 
-background:#ff9800;
-transform:translateY(-6px);
+transform:translateY(-8px);
 
-}
-
-.arrow{
-
-font-size:30px;
-color:#FFD700;
+background:#2b2b2b;
 
 }
 
-.days{
+.card img{
 
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:15px;
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
 
-}
-
-.day{
-
-background:rgba(255,255,255,.12);
-
-padding:18px;
-
-border-radius:12px;
-
-text-align:center;
+margin-bottom:15px;
 
 }
 
-.day h3{
+.card h2{
 
 color:#FFD700;
-margin-bottom:10px;
+margin-bottom:12px;
 
 }
 
-.footer{
+footer{
 
+background:#000;
 text-align:center;
-
-font-size:18px;
-
-padding-top:10px;
-
-border-top:1px solid rgba(255,255,255,.2);
-
-}
-
-@media(max-width:1000px){
-
-body{
-overflow:auto;
-}
-
-.container{
-height:auto;
-margin:20px;
-}
-
-.days{
-grid-template-columns:repeat(2,1fr);
-}
+padding:30px;
 
 }
 
@@ -172,105 +118,213 @@ grid-template-columns:repeat(2,1fr);
 
 <body>
 
-<div class="container">
+<header>
 
 <div>
 
-<h1>🏔 Uttarakhand Road Trip 2026</h1>
-
-<p class="subtitle">
-20 August – 24 August
-</p>
-
-</div>
-
-<div class="route">
-
-<div class="place">
-<h2>🏠 Meerut</h2>
-<p>Starting Point</p>
-</div>
-
-<div class="arrow">➜</div>
-
-<div class="place">
-<h2>🕉 Rishikesh</h2>
-<p>Gateway to Himalayas</p>
-</div>
-
-<div class="arrow">➜</div>
-
-<div class="place">
-<h2>🙏 Madhyamaheshwar</h2>
-<p>Panch Kedar Temple</p>
-</div>
-
-<div class="arrow">➜</div>
-
-<div class="place">
-<h2>🔱 Kalpeshwar</h2>
-<p>Lord Shiva Temple</p>
-</div>
-
-<div class="arrow">➜</div>
-
-<div class="place">
-<h2>❄ Auli</h2>
-<p>Snow Paradise</p>
-</div>
-
-</div>
-
-<div class="days">
-
-<div class="day">
-<h3>20 Aug</h3>
-<p>Meerut ➜ Rishikesh<br>Evening Ganga Aarti</p>
-</div>
-
-<div class="day">
-<h3>21 Aug</h3>
-<p>Travel & Trek towards Madhyamaheshwar</p>
-</div>
-
-<div class="day">
-<h3>22 Aug</h3>
-<p>Temple Darshan & Journey to Kalpeshwar</p>
-</div>
-
-<div class="day">
-<h3>23 Aug</h3>
-<p>Kalpeshwar Darshan ➜ Auli</p>
-</div>
-
-<div class="day">
-<h3>24 Aug</h3>
-<p>Explore Auli & Return Journey</p>
-</div>
-
-</div>
-
-<div class="footer">
-
-<h2 style="color:#FFD700;">🚗 Route</h2>
+<h1>🕉 The Legend of Lord Shri Ram</h1>
 
 <p>
 
-Meerut ➜ Rishikesh ➜ Madhyamaheshwar ➜ Kalpeshwar ➜ Auli
+From Birth to the Victory of Dharma
 
 </p>
 
-<br>
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="timeline">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?auto=format&fit=crop&w=900&q=80">
+
+<h2>1. Birth of Shri Ram</h2>
 
 <p>
 
-✨ One Journey • Five Destinations • Endless Memories ✨
+Lord Shri Ram was born in Ayodhya to King Dasharatha and Queen Kaushalya. His birth is celebrated every year as Ram Navami.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
+
+<h2>2. Education under Guru Vashistha</h2>
+
+<p>
+
+Ram received education in scriptures, warfare, leadership, ethics, and the responsibilities of an ideal ruler under Sage Vashistha.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
+
+<h2>3. Journey with Sage Vishwamitra</h2>
+
+<p>
+
+Ram protected sages from demons like Tataka and Subahu and gained divine celestial weapons.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80">
+
+<h2>4. Sita Swayamvar</h2>
+
+<p>
+
+Lord Ram broke the mighty bow of Lord Shiva and married Goddess Sita.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80">
+
+<h2>5. Exile (Vanvas)</h2>
+
+<p>
+
+Due to Queen Kaikeyi's two boons, Ram willingly accepted fourteen years of exile. Sita and Lakshman accompanied him.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80">
+
+<h2>6. Panchavati & Golden Deer</h2>
+
+<p>
+
+The appearance of the golden deer led to Ravana abducting Sita, changing the course of history.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80">
+
+<h2>7. Hanuman Meets Shri Ram</h2>
+
+<p>
+
+Hanuman became Ram's greatest devotee and messenger. Their friendship became a symbol of devotion and loyalty.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80">
+
+<h2>8. Ram Setu</h2>
+
+<p>
+
+The Vanara Sena constructed the Ram Setu across the ocean to reach Lanka.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=80">
+
+<h2>9. Battle of Lanka</h2>
+
+<p>
+
+A fierce battle took place between the forces of Dharma and Adharma. Many great warriors participated.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?auto=format&fit=crop&w=900&q=80">
+
+<h2>10. Ravana's Defeat</h2>
+
+<p>
+
+Lord Ram defeated Ravana using the Brahmastra, symbolizing the triumph of righteousness over evil.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80">
+
+<h2>11. Return to Ayodhya</h2>
+
+<p>
+
+After completing the exile, Lord Ram, Sita, and Lakshman returned to Ayodhya. The people celebrated with lamps, giving rise to the festival of Deepavali.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80">
+
+<h2>12. Ram Rajya</h2>
+
+<p>
+
+Lord Ram was crowned King of Ayodhya. His reign became known as Ram Rajya, remembered as an ideal kingdom based on justice, compassion, and righteousness.
 
 </p>
 
 </div>
 
 </div>
+
+</div>
+
+<footer>
+
+<h2 style="color:#FFD700;">
+
+॥ जय श्री राम ॥
+
+</h2>
+
+<p>
+
+"The victory of Dharma is eternal."
+
+</p>
+
+</footer>
 
 </body>
 </html>
